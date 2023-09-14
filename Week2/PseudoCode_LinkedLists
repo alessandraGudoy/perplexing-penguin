@@ -1,0 +1,73 @@
+/// Remove kth node
+
+currentK = 0;
+node = head;
+
+for(currentK = 0; currentK < k-1; currentK++){
+	node = node.next;
+}
+
+node = node.next.next;
+
+
+/// Remove kth node from the end
+
+currentK = 0;
+numNodes = 0;
+node = head
+
+while(node.next != null){
+	node = node.next;
+	numNodes += 1;
+}
+
+node = head;
+
+if(k==numNodes){
+	head = head.next;
+} else {
+
+	for(currentK = 0; currentK < numNodes - k - 1; currentK++){
+		node = node.next;
+	}
+	
+	node = node.next.next;
+}
+
+
+/// Combine two sorted linked lists
+
+LinkedList resultList = linkedlist with length of list1 length + list2 length;
+node result;
+node list1 = head;
+node list2 = head;
+
+boolean finished1 = false;
+
+if(list1<list2){
+	resultList.head = list1;
+	list1 = list1.next;
+} else{
+	resultList.head = list2;
+	list2 = list2.next;
+}
+
+while(list1.next != null && list2 != null){
+	if(list1<list2){
+		result = list1;
+		list1 = list1.next;
+	} else{
+		result = list2;
+		list2 = list2.next;
+	}
+}
+
+if(finished1){
+	while(list2.next != null){
+		result = list2.next;
+	}
+} else{
+	while(list1.next != null){
+		result = list1.next;
+	}
+}
