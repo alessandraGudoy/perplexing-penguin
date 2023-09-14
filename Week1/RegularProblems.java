@@ -5,16 +5,14 @@ import java.util.Arrays;
 public class RegularProblems {
 
     public static void main(String[] args) {
-        // System.out.println(Arrays.toString(hurrayArrays(new int[] {0,2,1,5,3,4})));
-        // System.out.println(Arrays.toString(hurrayArrays(new int[] {5,0,1,2,3,4})));
+        System.out.println(Arrays.toString(hurrayArrays(new int[] {0,2,1,5,3,4})));
+        System.out.println(Arrays.toString(hurrayArrays(new int[] {5,0,1,2,3,4})));
 
-        // System.out.println(Arrays.deepToString(keyboard(new String[]
-        // {"Hello","Alaska","Dad","Peace"})));
-        // System.out.println(Arrays.deepToString(keyboard(new String[] {"omk",
-        // "asdf"})));
+        System.out.println(Arrays.deepToString(keyboard(new String[] {"Hello","Alaska","Dad","Peace"})));
+        System.out.println(Arrays.deepToString(keyboard(new String[] {"omk", "asdf"})));
 
-        // System.out.println(consecOnes(new int[] {1,1,0,1,1,1}));
-        // System.out.println(consecOnes(new int[] {1,0,1,1,0,1}));
+        System.out.println(consecOnes(new int[] {1,1,0,1,1,1}));
+        System.out.println(consecOnes(new int[] {1,0,1,1,0,1}));
     }
 
 
