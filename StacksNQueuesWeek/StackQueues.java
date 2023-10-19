@@ -1,4 +1,4 @@
-package Week3;
+package StacksNQueuesWeek;
 
 import java.util.Arrays;
 import java.util.LinkedList;
