@@ -39,7 +39,7 @@ public class StackQueues {
         System.out.println(Arrays.toString(stackArr));
         */
 
-        System.out.println(validParentheses("()[]{}"));
+        //System.out.println(validParentheses("()[]{}"));
         System.out.println(stack.toString());
         System.out.println(stackToQueue(stack).toString());
     }
@@ -93,8 +93,12 @@ public class StackQueues {
         Queue<Integer> queue = new PriorityQueue<Integer>();
         Queue<Integer> result = new PriorityQueue<Integer>();
 
-        for(int i = 0; i<stack.size(); i++){
-            queue.add(stack.pop());
+        int size = stack.size();
+
+        for(int i = 0; i<size; i++){
+            int popped = stack.pop();
+            queue.add(popped);
+            System.out.println(popped);
             //result.add(queue.remove());
         }
 
