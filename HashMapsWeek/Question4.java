@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 public class Question4 {
 
-
    public static int[][] testCases = new int[][]{{1,2,3,1,1,3}, {1,1,1,1}, {1,2,3}};
    public static int[] testResults = new int[]{4, 6, 0};
 
