@@ -1,0 +1,19 @@
+
+INPUT : n versions
+    int start = 1;  int end = n;
+1.  Check halfway -> isBadVersion((start + end)/2)
+
+2.  If isBadVersion(n/2)==true, then check first half
+        start = start;  end = n/2
+        isBadVersion((start + end)/2)
+
+        if isBadVersion(start-1)==false, first bad version found => (start)
+
+    else isBadVersion(num)==false , then check second half
+        start = n/2; end = end;
+        isBadVersion((start + end)/2)
+
+
+Know the first bad version when:
+    isBadVersion(start-1)==false && isBadVersion(start) == true
+
